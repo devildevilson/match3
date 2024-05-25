@@ -1,0 +1,3 @@
+[submodule "include/cosmojourney"]
+	path = include/cosmojourney
+	url = https://github.com/devildevilson/cosmojourney.git

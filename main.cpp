@@ -1,7 +1,11 @@
 ﻿#include <iostream>
+#include "simul_world.h"
+
+using namespace devils_engine;
 
 int main() {
-  std::cout << "Hello CMake." << std::endl;
+  match3::simul_world w;
+  w.run();
 	return 0;
 }
 
