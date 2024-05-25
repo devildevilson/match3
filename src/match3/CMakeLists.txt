@@ -46,7 +46,7 @@ set(SRC_LIST
   simul_render.cpp
   simul_sound.cpp
   simul_world.cpp
-)
+ "simul_interface.cpp")
 
 set(HDR_LIST
   simul_interface.h

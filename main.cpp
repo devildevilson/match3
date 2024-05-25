@@ -5,6 +5,7 @@ using namespace devils_engine;
 
 int main() {
   match3::simul_world w;
+  w.init();
   w.run();
 	return 0;
 }

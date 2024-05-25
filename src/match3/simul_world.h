@@ -12,19 +12,22 @@
 using namespace devils_engine;
 
 namespace match3 {
-class simul_world : public simul_interface {
+// по идее тут мы бы тоже хотели simul_const, что мешает? нужны ли нам атомики?
+class simul_world final : public simul_const {
 public:
   // сюда надо передать аргументы
   simul_world() noexcept;
   ~simul_world() noexcept;
 
-  void run() override;
+  void init() override;
+  void run_core(const size_t frame_time) override;
+  /*void run() override;
   void set_quit(const bool val) override;
-  void set_frame_time(const size_t val) override;
+  void set_frame_time(const size_t val) override;*/
  private:
-  bool quit;
+  /*bool quit;
   size_t expected_frame_time;
-  size_t next_expected_frame_time;
+  size_t next_expected_frame_time;*/
 
   std::unique_ptr<simul_interface> r;
   std::unique_ptr<simul_interface> s;
